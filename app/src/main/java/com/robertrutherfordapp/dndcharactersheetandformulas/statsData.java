@@ -1,5 +1,7 @@
 package com.robertrutherfordapp.dndcharactersheetandformulas;
 
+import java.util.Random;
+
 /**
  * Created by Robert on 9/19/2017.
  */
@@ -24,12 +26,12 @@ public class statsData {
     private int prof = 0;
 
     public statsData(){
-        setStr(0);
-        setDex(0);
-        setCon(0);
-        setIntel(0);
-        setWis(0);
-        setCha(0);
+        setStr(10);
+        setDex(10);
+        setCon(10);
+        setIntel(10);
+        setWis(10);
+        setCha(10);
         setStrBmod(0);
         setDexBmod(0);
         setConBmod(0);
@@ -55,6 +57,7 @@ public class statsData {
         setChaBmod(newChamod);
     }
 
+    //Set functions
     public void setStr (int newStr){
         if (newStr >= 0)
             str = newStr;
@@ -120,6 +123,94 @@ public class statsData {
             prof = newProf;
     }
 
+   //Get functions
+
+    public int getStrmod(){
+        int moddifier;
+        return moddifier = calcMod(str, strmod);
+    }
+
+    public int getDexmod(){
+        int moddifier;
+        return moddifier = calcMod(dex,dexmod);
+    }
+
+    public int getConmod(){
+        int moddifier;
+        return moddifier = calcMod(con,conmod);
+    }
+
+    public int getIntelmod(){
+        int moddifier;
+        return moddifier = calcMod(intel,intelmod);
+    }
+
+    public int getWismod(){
+        int moddifier;
+        return moddifier = calcMod(wis,wismod);
+    }
+
+    public int getChamod(){
+        int moddifier;
+        return moddifier = calcMod(cha,chamod);
+    }
+
+
+    public  int getStr (){
+        return str;
+    }
+
+    public int getDex (){
+        return dex;
+    }
+
+    public int getCon (){
+        return con;
+    }
+
+    public int getIntel (){
+        return intel;
+    }
+
+    public int getWis (){
+        return wis;
+    }
+
+    public int getCha (){
+        return cha;
+    }
+
+    public int getProf (){
+        return prof;
+    }
+
+
+    public  int getStrBmod (){
+        return strmod;
+    }
+
+    public int getDexBmod (){
+        return dexmod;
+    }
+
+    public int getConBmod (){
+        return conmod;
+    }
+
+    public int getIntelBmod (){
+        return intelmod;
+    }
+
+    public int getWisBmod (){
+        return wismod;
+    }
+
+    public int getChaBmod (){
+        return chamod;
+    }
+
+    //calculations
+
     public int calcMod(int charStat, int bonusMod){
 
         int statTotal = charStat + bonusMod;
@@ -155,39 +246,16 @@ public class statsData {
         return modStat;
     }
 
-    public int getStr(){
-        int moddifier;
-        return moddifier = calcMod(str, strmod);
+    public int getRollD20(){
+        Random rand =new Random();
+        int roll = rand.nextInt(20)+1;
+        return roll;
     }
 
-    public int getDex(){
-        int moddifier;
-        return moddifier = calcMod(dex,dexmod);
+    public int calcThrow(int mod, int roll){
+        int diceThrow = mod + roll;
+        return diceThrow;
     }
-
-    public int getCon(){
-        int moddifier;
-        return moddifier = calcMod(con,conmod);
-    }
-
-    public int getIntel(){
-        int moddifier;
-        return moddifier = calcMod(intel,intelmod);
-    }
-
-    public int getWis(){
-        int moddifier;
-        return moddifier = calcMod(wis,wismod);
-    }
-
-    public int getCha(){
-        int moddifier;
-        return moddifier = calcMod(cha,chamod);
-    }
-
-
-
-
 
 
 }

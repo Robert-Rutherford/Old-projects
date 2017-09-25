@@ -9,8 +9,10 @@
     <ScrollView
         android:layout_width="368dp"
         android:layout_height="495dp"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp">
 
         <TableLayout
             android:layout_width="match_parent"
@@ -218,7 +220,9 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
 
                 <TextView
                     android:id="@+id/textINT"
@@ -376,6 +380,7 @@
                     android:id="@+id/buttonStatSave"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="CalcStats"
                     android:text="Save"
                     android:textAlignment="center" />
             </TableRow>
@@ -466,7 +471,8 @@
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textEqual1"
@@ -522,7 +528,8 @@
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textEqual1"
@@ -578,7 +585,8 @@
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textEqual1"
@@ -634,7 +642,8 @@
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textEqual1"
@@ -690,7 +699,8 @@
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textEqual1"
@@ -746,7 +756,8 @@
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textEqual1"
@@ -779,12 +790,14 @@
                     android:id="@+id/buttonRoll"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="CalcSavesRoll"
                     android:text="Roll" />
 
                 <Button
                     android:id="@+id/buttonCalc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="CalcStatSaves"
                     android:text="Clac" />
             </TableRow>
 
