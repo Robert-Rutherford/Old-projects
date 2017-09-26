@@ -146,17 +146,17 @@ public class StatusActivity extends AppCompatActivity {
 
         //return moddifiers
         TextView strModET = (TextView) findViewById(R.id.textSTRmod);
-        strModET.setText( "" + datastats.getStrmod());
+        strModET.setText(Integer.toString(datastats.getStrmod()));
         TextView dexModET = (TextView) findViewById(R.id.textDEXmod);
-        dexModET.setText( "" + datastats.getDexmod());
+        dexModET.setText(Integer.toString(datastats.getDexmod()));
         TextView conModET = (TextView) findViewById(R.id.textCONmod);
-        conModET.setText( "" + datastats.getConBmod());
+        conModET.setText(Integer.toString(datastats.getConBmod()));
         TextView intModET = (TextView) findViewById(R.id.textINTmod);
-        intModET.setText( "" + datastats.getIntelBmod());
+        intModET.setText(Integer.toString(datastats.getIntelBmod()));
         TextView wisModET = (TextView) findViewById(R.id.textWISmod);
-        wisModET.setText( "" + datastats.getWisBmod());
+        wisModET.setText(Integer.toString(datastats.getWisBmod()));
         TextView chaModET = (TextView) findViewById(R.id.textCHAmod);
-        chaModET.setText( "" + datastats.getChaBmod());
+        chaModET.setText(Integer.toString(datastats.getChaBmod()));
 
     }
 
