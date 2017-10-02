@@ -1,4 +1,32 @@
 <resources>
     <string name="app_name">DnDCharacterSheetAndFormulas</string>
     <string name="action_settings">Settings</string>
+    <string-array name="weapon_types">
+        <item>Melee</item>
+        <item>Ranged</item>
+        <item>Magic</item>
+    </string-array>
+    <string-array name="dice_type">
+        <item>1d4</item>
+        <item>1d6</item>
+        <item>1d8</item>
+        <item>1d10</item>
+        <item>1d12</item>
+        <item>1d20</item>
+    </string-array>
+    <string-array name="damage_type">
+        <item>Acid</item>
+        <item>Bludgeoning</item>
+        <item>Cold</item>
+        <item>Fire</item>
+        <item>Force</item>
+        <item>Lightning</item>
+        <item>Necrotic</item>
+        <item>Piercing</item>
+        <item>Poison</item>
+        <item>Psychic</item>
+        <item>Radient</item>
+        <item>Slashing</item>
+        <item>Thunder</item>
+    </string-array>
 </resources>

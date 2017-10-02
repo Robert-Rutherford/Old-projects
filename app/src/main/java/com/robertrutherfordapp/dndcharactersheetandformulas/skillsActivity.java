@@ -18,7 +18,7 @@ public class skillsActivity extends AppCompatActivity {
     public void updateView(){
 
         statsData datastats = MainActivity.dataStats;
-
+        //output the modifiers form the skill page
         TextView acroMod = (TextView) findViewById(R.id.textModAcro);
         acroMod.setText("" + datastats.getDexmod());
         TextView animalHandMod = (TextView) findViewById(R.id.textModAniHan);
@@ -139,7 +139,6 @@ public class skillsActivity extends AppCompatActivity {
         int survStat = Integer.parseInt(survModString);
 
 
-
         // get bonus modifier
         EditText rollAcroET = (EditText) findViewById(R.id.editRollAcro);
         String acroRollString = rollAcroET.getText().toString();
@@ -177,7 +176,6 @@ public class skillsActivity extends AppCompatActivity {
         String stealthRollString = rollStealthET.getText().toString();
         EditText rollSurvET = (EditText) findViewById(R.id.editRollSurv);
         String survRollString = rollSurvET.getText().toString();
-
 
         int acroRoll = Integer.parseInt(acroRollString);
         int animHandRoll = Integer.parseInt(animalHandRollString);
@@ -255,7 +253,6 @@ public class skillsActivity extends AppCompatActivity {
         throwstealth.setText(String.format("%d", stealthThrow));
         TextView throwsurv = (TextView) findViewById(R.id.textThrowSurv);
         throwsurv.setText(String.format("%d", survThrow));
-
 
     }
 
@@ -338,8 +335,6 @@ public class skillsActivity extends AppCompatActivity {
         int stealthStat = Integer.parseInt(stealthModString);
         int survStat = Integer.parseInt(survModString);
 
-
-
         // get bonus modifier
         int acroRoll = datastats.getRollD20();                     //Integer.parseInt(acroRollString);
         int animHandRoll = datastats.getRollD20();                  //Integer.parseInt(animalHandRollString);
@@ -396,9 +391,6 @@ public class skillsActivity extends AppCompatActivity {
         rollStealthET.setText(String.format("%d", stealthRoll));
         EditText rollSurvET = (EditText) findViewById(R.id.editRollSurv);
         rollSurvET.setText(String.format("%d", survRoll));
-
-
-
 
         //calculate
         int acroThrow = datastats.calcThrow(acroStat,acroRoll);
@@ -457,15 +449,6 @@ public class skillsActivity extends AppCompatActivity {
         throwstealth.setText(String.format("%d", stealthThrow));
         TextView throwsurv = (TextView) findViewById(R.id.textThrowSurv);
         throwsurv.setText(String.format("%d", survThrow));
-
-
-
-
-
-
-
-
-
 
     }
 

@@ -10,8 +10,6 @@ import android.widget.TextView;
 
 public class StatusActivity extends AppCompatActivity {
 
-    //public static statsData dataStats;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -322,8 +320,5 @@ public class StatusActivity extends AppCompatActivity {
         Intent myIntent = new Intent(this, StatusActivity.class);
         this.startActivity(myIntent);
     }
-
-
-
 
 }

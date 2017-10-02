@@ -20,7 +20,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".StatusActivity" />
-        <activity android:name=".skillsActivity"></activity>
+        <activity android:name=".skillsActivity" />
+        <activity android:name=".WeaponsPageActivity" />
+        <activity android:name=".CreateWeaponActivity"></activity>
     </application>
 
 </manifest>
