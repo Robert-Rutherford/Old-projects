@@ -7,12 +7,12 @@
         <item>Magic</item>
     </string-array>
     <string-array name="dice_type">
-        <item>1d4</item>
-        <item>1d6</item>
-        <item>1d8</item>
-        <item>1d10</item>
-        <item>1d12</item>
-        <item>1d20</item>
+        <item>d4</item>
+        <item>d6</item>
+        <item>d8</item>
+        <item>d10</item>
+        <item>d12</item>
+        <item>d20</item>
     </string-array>
     <string-array name="damage_type">
         <item>Acid</item>

@@ -48,12 +48,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/editWeapName"
-                android:layout_toLeftOf="@+id/weapTypeSpinner"
-                android:layout_toStartOf="@+id/weapTypeSpinner"
+                android:layout_toLeftOf="@+id/weapTypeSpinner1"
+                android:layout_toStartOf="@+id/weapTypeSpinner1"
                 android:text="Attack Type:" />
 
             <Spinner
-                android:id="@+id/weapTypeSpinner"
+                android:id="@+id/weapTypeSpinner1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/editWeapName"
@@ -67,7 +67,7 @@
                 android:layout_height="match_parent"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/weapTypeSpinner"
+                android:layout_below="@+id/weapTypeSpinner1"
                 android:id="@+id/tableLayout">
 
                 <TableRow
@@ -75,7 +75,7 @@
                     android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/weapTypeSpinner">
+                    android:layout_below="@+id/weapTypeSpinner1">
 
                     <TextView
                         android:id="@+id/textNumDice1"
@@ -85,11 +85,12 @@
 
                     <EditText
                         android:id="@+id/editNumDice"
-                        android:layout_width="75dp"
+                        android:layout_width="65dp"
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:inputType="number"
-                        android:textSize="12sp" />
+                        android:textAlignment="center"
+                        android:textSize="14sp" />
 
                     <TextView
                         android:id="@+id/textDiceType"
@@ -98,9 +99,10 @@
                         android:text="Dice Type:" />
 
                     <Spinner
-                        android:id="@+id/DiceTypespinner1"
+                        android:id="@+id/diceTypespinner1"
                         android:layout_width="75dp"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="match_parent" />
+
                 </TableRow>
 
                 <TableRow

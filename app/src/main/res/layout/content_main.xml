@@ -212,6 +212,7 @@
                 android:layout_alignRight="@+id/buttonSkills"
                 android:layout_alignStart="@+id/editInitiative"
                 android:layout_below="@+id/buttonSkills"
+                android:onClick="weaponsPage"
                 android:text="Weapons and Spells" />
 
         </RelativeLayout>

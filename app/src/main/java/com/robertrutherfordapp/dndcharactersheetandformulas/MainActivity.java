@@ -79,4 +79,10 @@ public class MainActivity extends AppCompatActivity {
         Intent myIntent = new Intent(this, skillsActivity.class);
         this.startActivity(myIntent);
     }
+
+    public void weaponsPage (View v){
+        Intent myIntent = new Intent(this, WeaponsPageActivity.class);
+        this.startActivity(myIntent);
+    }
+
 }

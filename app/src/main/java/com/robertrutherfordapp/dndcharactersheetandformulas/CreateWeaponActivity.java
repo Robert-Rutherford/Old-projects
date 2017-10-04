@@ -17,12 +17,12 @@ public class CreateWeaponActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_weapon);
-        weaptypeSpin = (Spinner) findViewById(R.id.weapTypeSpinner);
+        weaptypeSpin = (Spinner) findViewById(R.id.weapTypeSpinner1);
         weapTypeadapter = ArrayAdapter.createFromResource(this,R.array.weapon_types,android.R.layout.simple_spinner_item);
         weapTypeadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         weaptypeSpin.setAdapter(weapTypeadapter);
 
-        diceTypeSpin = (Spinner) findViewById(R.id.DiceTypespinner1);
+        diceTypeSpin = (Spinner) findViewById(R.id.diceTypespinner1);
         diceTypeadapter = ArrayAdapter.createFromResource(this,R.array.dice_type,android.R.layout.simple_spinner_item);
         diceTypeadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         diceTypeSpin.setAdapter(diceTypeadapter);
