@@ -14,12 +14,13 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     public static statsData dataStats;
-
+    public static CreateWeapData weapStats;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         dataStats = new statsData();
+        weapStats = new CreateWeapData();
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
