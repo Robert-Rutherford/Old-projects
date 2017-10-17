@@ -15,12 +15,14 @@ public class MainActivity extends AppCompatActivity {
 
     public static statsData dataStats;
     public static CreateWeapData weapStats;
+    public static weaponDatabase weaponData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         dataStats = new statsData();
         weapStats = new CreateWeapData();
+        weaponData = new weaponDatabase();
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
