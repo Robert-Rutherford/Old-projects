@@ -121,8 +121,8 @@ public class CreateWeaponActivity extends AppCompatActivity {
         typeDamage[0] = damageTypeString1;
 
         if (addMoreDice == true){
-            for(int i = 1; i < numOfDiceAdded; i++){
-
+            for(int i = 1; i <= numOfDiceAdded; i++){
+                try {
                 String NewNumbDice = numbOfDiceID[i].getText().toString();
                 int numbDice = Integer.parseInt(NewNumbDice);
                 weapStats.setNumOfDice(i, numbDice);
@@ -136,7 +136,12 @@ public class CreateWeaponActivity extends AppCompatActivity {
                 weapStats.setDamgTypes(i, NewDamagetype);
                 typeDamage[i] = NewDamagetype;
 
-            }
+                } catch (Exception ex) {
+                         System.out.println(ex.getMessage());
+                         ex.printStackTrace();
+                     }
+
+                }
         }
 
 

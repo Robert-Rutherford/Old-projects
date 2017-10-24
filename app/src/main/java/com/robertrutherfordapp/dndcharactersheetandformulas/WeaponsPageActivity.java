@@ -18,7 +18,7 @@ public class WeaponsPageActivity extends AppCompatActivity {
     TableRow[] weapDamgTypeRow = new TableRow[15];
     TableRow[][] diceDamgTypeRow = new TableRow[15][5];
     TableRow[][] numbOfDice = new TableRow[15][10];
-
+    TableRow[][] diceThrowRow = new TableRow[15][10];
 
     TextView[] weapNameText = new TextView[15];
     TextView[] WeaponNames = new TextView[15];
@@ -34,6 +34,8 @@ public class WeaponsPageActivity extends AppCompatActivity {
     EditText[][] diceSpaces = new EditText[30][50];
     TextView[] signTexts = new TextView[100];
 
+    TextView[][] diceThrowText = new TextView[10][5];
+    TextView[][] diceThrow = new TextView[10][5];
 
     int diceTextNumb = 0;
     int textSignNumb = 0;
@@ -108,6 +110,7 @@ public class WeaponsPageActivity extends AppCompatActivity {
 
             weapTableL.addView(weapDamgTypeRow[weaponNumb], new LinearLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
 
+            int diceBlock = 0;
 
             for (int j = 0; j < weapData.weaponNumbSets[weaponNumb]; j++) {
 
@@ -137,15 +140,16 @@ public class WeaponsPageActivity extends AppCompatActivity {
                 weapTableL.addView(diceDamgTypeRow[weaponNumb][j], new LinearLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
 
 
-                int diceBlock = 0;
+                boolean alldice = false;
                 int numberdice = Integer.parseInt(weapData.numbOfDice[weaponNumb][j]);
 
-                for (int diceSet = 0; diceSet < numberdice; diceSet++) {
+                //for (int diceSet = 0; diceSet < numberdice; diceSet++) {
 
-                    numbOfDice[weaponNumb][diceSet] = new TableRow(this);
+                    numbOfDice[weaponNumb][j] = new TableRow(this);
 
+                while(alldice != true) {
                     if ((numberdice - diceBlock) > 5) {
-                        for (int spaceCounter = 1; spaceCounter <= 5; spaceCounter++) {
+                        for (int spaceCounter = 0; spaceCounter < 5; spaceCounter++) {
 
                             diceSpaces[weaponNumb][diceTextNumb] = new EditText(this);
                             diceSpaces[weaponNumb][diceTextNumb].setLayoutParams(new
@@ -156,8 +160,8 @@ public class WeaponsPageActivity extends AppCompatActivity {
                             signTexts[textSignNumb].setText(" + ");
                             signTexts[textSignNumb].setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT));
 
-                            numbOfDice[weaponNumb][diceSet].addView(diceSpaces[weaponNumb][diceTextNumb]);
-                            numbOfDice[weaponNumb][diceSet].addView(signTexts[textSignNumb]);
+                            numbOfDice[weaponNumb][j].addView(diceSpaces[weaponNumb][diceTextNumb]);
+                            numbOfDice[weaponNumb][j].addView(signTexts[textSignNumb]);
 
                             diceTextNumb++;
                             textSignNumb++;
@@ -165,12 +169,13 @@ public class WeaponsPageActivity extends AppCompatActivity {
 
                         }
 
-                        signTexts[textSignNumb] = new TextView(this);
-                        signTexts[textSignNumb].setText(" = ");
-                        signTexts[textSignNumb].setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT));
+                        //signTexts[textSignNumb] = new TextView(this);
+                        //signTexts[textSignNumb].setText(" = ");
+                        //signTexts[textSignNumb].setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT));
 
-                        numbOfDice[weaponNumb][diceSet].addView(signTexts[textSignNumb]);
-                        textSignNumb++;
+                        //numbOfDice[weaponNumb][diceSet].addView(signTexts[textSignNumb]);
+                        //textSignNumb++;
+                        diceBlock = diceBlock + 5;
 
                     } else {
                         for (int spaceCounter = 1; spaceCounter <= (numberdice - diceBlock); spaceCounter++) {
@@ -181,30 +186,75 @@ public class WeaponsPageActivity extends AppCompatActivity {
                                     TableRow.LayoutParams.WRAP_CONTENT));
 
                             signTexts[textSignNumb] = new TextView(this);
+                            //if( spaceCounter == (numberdice - diceBlock)){
+                            // signTexts[textSignNumb].setText(" = ");
+                            //}else{
                             signTexts[textSignNumb].setText(" + ");
+                            //}
                             signTexts[textSignNumb].setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT));
 
-                            numbOfDice[weaponNumb][diceSet].addView(diceSpaces[weaponNumb][diceTextNumb]);
-                            numbOfDice[weaponNumb][diceSet].addView(signTexts[textSignNumb]);
+                            numbOfDice[weaponNumb][j].addView(diceSpaces[weaponNumb][diceTextNumb]);
+                            numbOfDice[weaponNumb][j].addView(signTexts[textSignNumb]);
+
 
                             diceTextNumb++;
                             textSignNumb++;
 
+                            if (spaceCounter == (numberdice - diceBlock)) {
+                                signTexts[textSignNumb] = new TextView(this);
+                                signTexts[textSignNumb].setText(" = ");
+                                signTexts[textSignNumb].setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT));
+
+                                numbOfDice[weaponNumb][j].addView(signTexts[textSignNumb]);
+
+                                textSignNumb++;
+                                alldice = true;
+                            }
+
+
                         }
 
-                        signTexts[textSignNumb] = new TextView(this);
-                        signTexts[textSignNumb].setText(" = ");
-                        signTexts[textSignNumb].setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT));
+                        //signTexts[textSignNumb] = new TextView(this);
+                        //signTexts[textSignNumb].setText(" = ");
+                        //signTexts[textSignNumb].setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT));
 
-                        numbOfDice[weaponNumb][diceSet].addView(signTexts[textSignNumb]);
-                        textSignNumb++;
+                        //numbOfDice[weaponNumb][diceSet].addView(signTexts[textSignNumb]);
+                        //textSignNumb++;
 
                     }
 
-                    weapTableL.addView(numbOfDice[weaponNumb][diceSet], new LinearLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+                    //weapTableL.addView(numbOfDice[weaponNumb][diceSet], new LinearLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
 
                 }
 
+
+
+
+                //}
+
+                weapTableL.addView(numbOfDice[weaponNumb][j], new LinearLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT));
+
+
+                //Dice Throw
+                diceThrowRow[weaponNumb][j] = new TableRow(this);
+
+                diceThrowText[weaponNumb][j] = new TextView(this);
+                diceThrowText[weaponNumb][j].setText("Dice Throw:  ");
+                diceThrowText[weaponNumb][j].setLayoutParams(new
+                        TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT,
+                        TableRow.LayoutParams.WRAP_CONTENT));
+
+                diceThrow[weaponNumb][j] = new TextView(this);
+                diceThrowText[weaponNumb][j].setText("");
+                diceThrow[weaponNumb][j].setLayoutParams(new
+                        TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT,
+                        TableRow.LayoutParams.WRAP_CONTENT));
+
+                diceThrowRow[weaponNumb][j].addView(diceThrowText[weaponNumb][j]);
+                diceThrowRow[weaponNumb][j].addView(diceThrow[weaponNumb][j]);
+
+                weapTableL.addView(diceThrowRow[weaponNumb][j], new LinearLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
 
             }
 
