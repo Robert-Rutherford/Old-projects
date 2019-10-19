@@ -1,148 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.robertrutherfordapp.dndcharactersheetandformulas.CreateWeaponActivity">
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context="com.robertrutherfordapp.dndcharactersheetandformulas.CreateWeaponActivity">
 
     <ScrollView
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="9dp">
+            android:layout_width="368dp"
+            android:layout_height="495dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="9dp">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="8dp">
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
 
             <TextView
-                android:id="@+id/textWepName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/editWeapName"
-                android:layout_alignBottom="@+id/editWeapName"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:text="Weapon/Spell Name:"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="16dp" />
+                    android:id="@+id/textWepName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/editWeapName"
+                    android:layout_alignBottom="@+id/editWeapName"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="Weapon/Spell Name:"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="16dp"/>
 
             <EditText
-                android:id="@+id/editWeapName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_toEndOf="@+id/textWepName"
-                android:layout_toRightOf="@+id/textWepName"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textSize="12sp"
-                tools:layout_editor_absoluteX="148dp"
-                tools:layout_editor_absoluteY="8dp" />
+                    android:id="@+id/editWeapName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/textWepName"
+                    android:layout_toRightOf="@+id/textWepName"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="12sp"
+                    tools:layout_editor_absoluteX="148dp"
+                    tools:layout_editor_absoluteY="8dp"/>
 
             <TextView
-                android:id="@+id/textWeapAttackType"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/editWeapName"
-                android:layout_toLeftOf="@+id/weapTypeSpinner1"
-                android:layout_toStartOf="@+id/weapTypeSpinner1"
-                android:text="Attack Type:" />
+                    android:id="@+id/textWeapAttackType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editWeapName"
+                    android:layout_toLeftOf="@+id/weapTypeSpinner1"
+                    android:layout_toStartOf="@+id/weapTypeSpinner1"
+                    android:text="Attack Type:"/>
 
             <Spinner
-                android:id="@+id/weapTypeSpinner1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/editWeapName"
-                android:layout_alignLeft="@+id/editWeapName"
-                android:layout_alignRight="@+id/editWeapName"
-                android:layout_alignStart="@+id/editWeapName"
-                android:layout_below="@+id/editWeapName" />
+                    android:id="@+id/weapTypeSpinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/editWeapName"
+                    android:layout_alignLeft="@+id/editWeapName"
+                    android:layout_alignRight="@+id/editWeapName"
+                    android:layout_alignStart="@+id/editWeapName"
+                    android:layout_below="@+id/editWeapName"/>
 
             <TableLayout
-                android:id="@+id/diceTableLayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/weapTypeSpinner1">
-
-                <TableRow
+                    android:id="@+id/diceTableLayout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/weapTypeSpinner1">
 
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/weapTypeSpinner1">
+
                     <TextView
-                        android:id="@+id/textNumDice1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Number of Dice:" />
+                            android:id="@+id/textNumDice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Number of Dice:"/>
 
                     <EditText
-                        android:id="@+id/editNumDice"
-                        android:layout_width="65dp"
-                        android:layout_height="wrap_content"
-                        android:ems="10"
-                        android:inputType="number"
-                        android:textAlignment="center"
-                        android:textSize="14sp" />
+                            android:id="@+id/editNumDice"
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:textAlignment="center"
+                            android:textSize="14sp"/>
 
                     <TextView
-                        android:id="@+id/textDiceType"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Dice Type:" />
+                            android:id="@+id/textDiceType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dice Type:"/>
 
                     <Spinner
-                        android:id="@+id/diceTypespinner1"
-                        android:layout_width="75dp"
-                        android:layout_height="match_parent" />
+                            android:id="@+id/diceTypespinner1"
+                            android:layout_width="75dp"
+                            android:layout_height="match_parent"/>
 
                 </TableRow>
 
                 <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/textDamageType1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Damage Type:" />
+                            android:id="@+id/textDamageType1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Damage Type:"/>
 
                     <Spinner
-                        android:id="@+id/damTypespinner1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                            android:id="@+id/damTypespinner1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
 
                 </TableRow>
 
             </TableLayout>
 
             <Button
-                android:id="@+id/addDiceSet"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/diceTableLayout"
-                android:layout_marginTop="18dp"
-                android:text="Add Dice" />
+                    android:id="@+id/addDiceSet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/diceTableLayout"
+                    android:layout_marginTop="18dp"
+                    android:text="Add Dice"/>
 
             <Button
-                android:id="@+id/createWeaponbutton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/addDiceSet"
-                android:layout_alignBottom="@+id/addDiceSet"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:text="Create" />
+                    android:id="@+id/createWeaponbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/addDiceSet"
+                    android:layout_alignBottom="@+id/addDiceSet"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="Create"/>
 
         </RelativeLayout>
     </ScrollView>

@@ -1,809 +1,809 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.robertrutherfordapp.dndcharactersheetandformulas.StatusActivity">
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context="com.robertrutherfordapp.dndcharactersheetandformulas.StatusActivity">
 
     <ScrollView
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        tools:layout_editor_absoluteY="0dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginStart="8dp">
+            android:layout_width="368dp"
+            android:layout_height="495dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginStart="8dp">
 
         <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textStatus"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Status:"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                        android:id="@+id/textStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
 
                 <TextView
-                    android:id="@+id/textStatline"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Stat"
-                    android:textAlignment="center" />
+                        android:id="@+id/textStatline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stat"
+                        android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/textView16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:textAlignment="center" />
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/textmisc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Misc."
-                    android:textAlignment="center" />
+                        android:id="@+id/textmisc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Misc."
+                        android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/textView18"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="="
-                    android:textAlignment="center" />
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="="
+                        android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/textModifier"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Modifier"
-                    android:textAlignment="center" />
+                        android:id="@+id/textModifier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Modifier"
+                        android:textAlignment="center"/>
 
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textStrength"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Strength:"
-                    android:textSize="18sp" />
+                        android:id="@+id/textStrength"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Strength:"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editStatSTR"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="1-20"
-                    android:inputType="number"
-                    android:textSize="14sp" />
+                        android:id="@+id/editStatSTR"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="1-20"
+                        android:inputType="number"
+                        android:textSize="14sp"/>
 
                 <TextView
-                    android:id="@+id/textPlus1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:textSize="18sp" />
+                        android:id="@+id/textPlus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editSTRmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number" />
+                        android:id="@+id/editSTRmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"/>
 
                 <TextView
-                    android:id="@+id/textEqual1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="="
-                    android:textSize="18sp" />
+                        android:id="@+id/textEqual1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="="
+                        android:textSize="18sp"/>
 
                 <TextView
-                    android:id="@+id/textSTRmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                        android:id="@+id/textSTRmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="24sp"/>
 
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textDex"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Dexterity:"
-                    android:textSize="18sp" />
+                        android:id="@+id/textDex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dexterity:"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editStatDEX"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
+                        android:id="@+id/editStatDEX"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textSize="14sp"/>
 
                 <TextView
-                    android:id="@+id/textPlus2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:textSize="18sp" />
+                        android:id="@+id/textPlus2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editDEXmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number" />
+                        android:id="@+id/editDEXmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"/>
 
                 <TextView
-                    android:id="@+id/textEqual2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="="
-                    android:textSize="18sp" />
+                        android:id="@+id/textEqual2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="="
+                        android:textSize="18sp"/>
 
                 <TextView
-                    android:id="@+id/textDEXmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                        android:id="@+id/textDEXmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="24sp"/>
 
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textCON"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Constitution:"
-                    android:textSize="18sp" />
+                        android:id="@+id/textCON"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Constitution:"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editStatCON"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
+                        android:id="@+id/editStatCON"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textSize="14sp"/>
 
                 <TextView
-                    android:id="@+id/textPlus3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:textSize="18sp" />
+                        android:id="@+id/textPlus3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editCONmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number" />
+                        android:id="@+id/editCONmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"/>
 
                 <TextView
-                    android:id="@+id/textEqual3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="="
-                    android:textSize="18sp" />
+                        android:id="@+id/textEqual3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="="
+                        android:textSize="18sp"/>
 
                 <TextView
-                    android:id="@+id/textCONmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                        android:id="@+id/textCONmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="24sp"/>
 
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="8dp">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
 
                 <TextView
-                    android:id="@+id/textINT"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Intelligence:"
-                    android:textSize="18sp" />
+                        android:id="@+id/textINT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Intelligence:"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editStatINT"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
+                        android:id="@+id/editStatINT"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textSize="14sp"/>
 
                 <TextView
-                    android:id="@+id/textPlus4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:textSize="18sp" />
+                        android:id="@+id/textPlus4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editINTmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number" />
+                        android:id="@+id/editINTmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"/>
 
                 <TextView
-                    android:id="@+id/textEqual4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="="
-                    android:textSize="18sp" />
+                        android:id="@+id/textEqual4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="="
+                        android:textSize="18sp"/>
 
                 <TextView
-                    android:id="@+id/textINTmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                        android:id="@+id/textINTmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="24sp"/>
 
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textWIS"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Wisdom:"
-                    android:textSize="18sp" />
+                        android:id="@+id/textWIS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wisdom:"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editStatWIS"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
+                        android:id="@+id/editStatWIS"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textSize="14sp"/>
 
                 <TextView
-                    android:id="@+id/textPlus5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:textSize="18sp" />
+                        android:id="@+id/textPlus5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editWISmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number" />
+                        android:id="@+id/editWISmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"/>
 
                 <TextView
-                    android:id="@+id/textEqual5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="="
-                    android:textSize="18sp" />
+                        android:id="@+id/textEqual5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="="
+                        android:textSize="18sp"/>
 
                 <TextView
-                    android:id="@+id/textWISmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                        android:id="@+id/textWISmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="24sp"/>
 
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textCHA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Charisma:"
-                    android:textSize="18sp" />
+                        android:id="@+id/textCHA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Charisma:"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editStatCHA"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
+                        android:id="@+id/editStatCHA"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textSize="14sp"/>
 
                 <TextView
-                    android:id="@+id/textPlus6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:textSize="18sp" />
+                        android:id="@+id/textPlus6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editCHAmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number" />
+                        android:id="@+id/editCHAmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"/>
 
                 <TextView
-                    android:id="@+id/textEqual6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="="
-                    android:textSize="18sp" />
+                        android:id="@+id/textEqual6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="="
+                        android:textSize="18sp"/>
 
                 <TextView
-                    android:id="@+id/textCHAmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                        android:id="@+id/textCHAmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="24sp"/>
 
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="8dp">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:layout_editor_absoluteY="8dp">
 
                 <Button
-                    android:id="@+id/buttonStatSave"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="CalcStats"
-                    android:text="Save"
-                    android:textAlignment="center" />
+                        android:id="@+id/buttonStatSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="CalcStats"
+                        android:text="Save"
+                        android:textAlignment="center"/>
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textSaveThrow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Saving Throws:"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                        android:id="@+id/textSaveThrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saving Throws:"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
 
                 <TextView
-                    android:id="@+id/textmodi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=" modifier"
-                    android:textAlignment="center" />
+                        android:id="@+id/textmodi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" modifier"
+                        android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:textAlignment="center" />
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/textRoll"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Roll"
-                    android:textAlignment="center" />
+                        android:id="@+id/textRoll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Roll"
+                        android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/textView13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="="
-                    android:textAlignment="center" />
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="="
+                        android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/textThrow"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Throw"
-                    android:textAlignment="center" />
+                        android:id="@+id/textThrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Throw"
+                        android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/textProf"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Prof."
-                    android:textAlignment="center" />
+                        android:id="@+id/textProf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Prof."
+                        android:textAlignment="center"/>
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textSTRSave"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Strength:"
-                    android:textSize="18sp" />
+                        android:id="@+id/textSTRSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Strength:"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editStatSTRmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
+                        android:id="@+id/editStatSTRmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textSize="14sp"/>
 
                 <TextView
-                    android:id="@+id/textPlus1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:textSize="18sp" />
+                        android:id="@+id/textPlus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editSTRRoll"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textAlignment="center" />
+                        android:id="@+id/editSTRRoll"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/textEqual1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="="
-                    android:textSize="18sp" />
+                        android:id="@+id/textEqual1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="="
+                        android:textSize="18sp"/>
 
                 <TextView
-                    android:id="@+id/textSTRThrow"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                        android:id="@+id/textSTRThrow"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="24sp"/>
 
                 <RadioButton
-                    android:id="@+id/radioButtonSTR"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAlignment="center" />
+                        android:id="@+id/radioButtonSTR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"/>
 
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textDEXSave"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Dexterity:"
-                    android:textSize="18sp" />
+                        android:id="@+id/textDEXSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dexterity:"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editStatDEXmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
+                        android:id="@+id/editStatDEXmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textSize="14sp"/>
 
                 <TextView
-                    android:id="@+id/textPlus1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:textSize="18sp" />
+                        android:id="@+id/textPlus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editDEXRoll"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textAlignment="center" />
+                        android:id="@+id/editDEXRoll"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/textEqual1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="="
-                    android:textSize="18sp" />
+                        android:id="@+id/textEqual1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="="
+                        android:textSize="18sp"/>
 
                 <TextView
-                    android:id="@+id/textDEXThrow"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                        android:id="@+id/textDEXThrow"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="24sp"/>
 
                 <RadioButton
-                    android:id="@+id/radioButtonDEX"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAlignment="center" />
+                        android:id="@+id/radioButtonDEX"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"/>
 
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textCONSave"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Constitution:"
-                    android:textSize="18sp" />
+                        android:id="@+id/textCONSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Constitution:"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editStatCONmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
+                        android:id="@+id/editStatCONmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textSize="14sp"/>
 
                 <TextView
-                    android:id="@+id/textPlus1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:textSize="18sp" />
+                        android:id="@+id/textPlus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editCONRoll"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textAlignment="center" />
+                        android:id="@+id/editCONRoll"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/textEqual1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="="
-                    android:textSize="18sp" />
+                        android:id="@+id/textEqual1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="="
+                        android:textSize="18sp"/>
 
                 <TextView
-                    android:id="@+id/textCONThrow"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                        android:id="@+id/textCONThrow"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="24sp"/>
 
                 <RadioButton
-                    android:id="@+id/radioButtonCON"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAlignment="center" />
+                        android:id="@+id/radioButtonCON"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"/>
 
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textINTSave"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Intelligence:"
-                    android:textSize="18sp" />
+                        android:id="@+id/textINTSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Intelligence:"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editStatINTmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
+                        android:id="@+id/editStatINTmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textSize="14sp"/>
 
                 <TextView
-                    android:id="@+id/textPlus1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:textSize="18sp" />
+                        android:id="@+id/textPlus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editINTRoll"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textAlignment="center" />
+                        android:id="@+id/editINTRoll"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/textEqual1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="="
-                    android:textSize="18sp" />
+                        android:id="@+id/textEqual1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="="
+                        android:textSize="18sp"/>
 
                 <TextView
-                    android:id="@+id/textINTThrow"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                        android:id="@+id/textINTThrow"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="24sp"/>
 
                 <RadioButton
-                    android:id="@+id/radioButtonINT"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAlignment="center" />
+                        android:id="@+id/radioButtonINT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"/>
 
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textWISSave"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Wisdom:"
-                    android:textSize="18sp" />
+                        android:id="@+id/textWISSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wisdom:"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editStatWISmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
+                        android:id="@+id/editStatWISmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textSize="14sp"/>
 
                 <TextView
-                    android:id="@+id/textPlus1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:textSize="18sp" />
+                        android:id="@+id/textPlus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editWISRoll"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textAlignment="center" />
+                        android:id="@+id/editWISRoll"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/textEqual1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="="
-                    android:textSize="18sp" />
+                        android:id="@+id/textEqual1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="="
+                        android:textSize="18sp"/>
 
                 <TextView
-                    android:id="@+id/textWISThrow"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                        android:id="@+id/textWISThrow"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="24sp"/>
 
                 <RadioButton
-                    android:id="@+id/radioButtonWIS"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAlignment="center" />
+                        android:id="@+id/radioButtonWIS"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"/>
 
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textCHASave"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Charisma:"
-                    android:textSize="18sp" />
+                        android:id="@+id/textCHASave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Charisma:"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editStatCHAmod"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
+                        android:id="@+id/editStatCHAmod"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textSize="14sp"/>
 
                 <TextView
-                    android:id="@+id/textPlus1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+"
-                    android:textSize="18sp" />
+                        android:id="@+id/textPlus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="18sp"/>
 
                 <EditText
-                    android:id="@+id/editCHARoll"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textAlignment="center" />
+                        android:id="@+id/editCHARoll"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:textAlignment="center"/>
 
                 <TextView
-                    android:id="@+id/textEqual1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="="
-                    android:textSize="18sp" />
+                        android:id="@+id/textEqual1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="="
+                        android:textSize="18sp"/>
 
                 <TextView
-                    android:id="@+id/textCHAThrow"
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textSize="24sp" />
+                        android:id="@+id/textCHAThrow"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textSize="24sp"/>
 
                 <RadioButton
-                    android:id="@+id/radioButtonCHA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAlignment="center" />
+                        android:id="@+id/radioButtonCHA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"/>
 
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/buttonRoll"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="CalcSavesRoll"
-                    android:text="Roll" />
+                        android:id="@+id/buttonRoll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="CalcSavesRoll"
+                        android:text="Roll"/>
 
                 <Button
-                    android:id="@+id/buttonCalc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:onClick="CalcStatSaves"
-                    android:text="Clac" />
+                        android:id="@+id/buttonCalc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="CalcStatSaves"
+                        android:text="Clac"/>
             </TableRow>
 
             <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
         </TableLayout>
     </ScrollView>
 

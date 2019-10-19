@@ -1,219 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.robertrutherfordapp.dndcharactersheetandformulas.MainActivity"
-    tools:showIn="@layout/activity_main">
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                                             tools:context="com.robertrutherfordapp.dndcharactersheetandformulas.MainActivity"
+                                             tools:showIn="@layout/activity_main">
 
 
     <ScrollView
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+            android:layout_width="368dp"
+            android:layout_height="495dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/textName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/editName"
-                android:layout_alignBottom="@+id/editName"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginLeft="21dp"
-                android:layout_marginStart="21dp"
-                android:text="Name:"
-                android:textSize="18sp" />
+                    android:id="@+id/textName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/editName"
+                    android:layout_alignBottom="@+id/editName"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginStart="21dp"
+                    android:text="Name:"
+                    android:textSize="18sp"/>
 
             <EditText
-                android:id="@+id/editName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_toEndOf="@+id/textName"
-                android:layout_toRightOf="@+id/textName"
-                android:ems="10"
-                android:inputType="textPersonName" />
+                    android:id="@+id/editName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/textName"
+                    android:layout_toRightOf="@+id/textName"
+                    android:ems="10"
+                    android:inputType="textPersonName"/>
 
             <TextView
-                android:id="@+id/textAge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/editAge"
-                android:layout_alignBottom="@+id/editAge"
-                android:layout_alignLeft="@+id/textName"
-                android:layout_alignStart="@+id/textName"
-                android:text="Age:"
-                android:textSize="18sp" />
+                    android:id="@+id/textAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/editAge"
+                    android:layout_alignBottom="@+id/editAge"
+                    android:layout_alignLeft="@+id/textName"
+                    android:layout_alignStart="@+id/textName"
+                    android:text="Age:"
+                    android:textSize="18sp"/>
 
             <EditText
-                android:id="@+id/editAge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/editName"
-                android:layout_alignStart="@+id/editName"
-                android:layout_below="@+id/editName"
-                android:ems="10"
-                android:inputType="number" />
+                    android:id="@+id/editAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/editName"
+                    android:layout_alignStart="@+id/editName"
+                    android:layout_below="@+id/editName"
+                    android:ems="10"
+                    android:inputType="number"/>
 
             <TextView
-                android:id="@+id/textRace"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/editRace"
-                android:layout_alignBottom="@+id/editRace"
-                android:layout_alignLeft="@+id/textAge"
-                android:layout_alignStart="@+id/textAge"
-                android:text="Race:"
-                android:textSize="18sp" />
+                    android:id="@+id/textRace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/editRace"
+                    android:layout_alignBottom="@+id/editRace"
+                    android:layout_alignLeft="@+id/textAge"
+                    android:layout_alignStart="@+id/textAge"
+                    android:text="Race:"
+                    android:textSize="18sp"/>
 
             <EditText
-                android:id="@+id/editRace"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/editAge"
-                android:layout_alignStart="@+id/editAge"
-                android:layout_below="@+id/editAge"
-                android:ems="10"
-                android:inputType="textPersonName" />
+                    android:id="@+id/editRace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/editAge"
+                    android:layout_alignStart="@+id/editAge"
+                    android:layout_below="@+id/editAge"
+                    android:ems="10"
+                    android:inputType="textPersonName"/>
 
             <TextView
-                android:id="@+id/textClass"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/editClass"
-                android:layout_alignBottom="@+id/editClass"
-                android:layout_alignEnd="@+id/textRace"
-                android:layout_alignRight="@+id/textRace"
-                android:text="Class:"
-                android:textSize="18sp" />
+                    android:id="@+id/textClass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/editClass"
+                    android:layout_alignBottom="@+id/editClass"
+                    android:layout_alignEnd="@+id/textRace"
+                    android:layout_alignRight="@+id/textRace"
+                    android:text="Class:"
+                    android:textSize="18sp"/>
 
             <EditText
-                android:id="@+id/editClass"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/editRace"
-                android:layout_alignStart="@+id/editRace"
-                android:layout_below="@+id/editRace"
-                android:ems="10"
-                android:inputType="textPersonName" />
+                    android:id="@+id/editClass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/editRace"
+                    android:layout_alignStart="@+id/editRace"
+                    android:layout_below="@+id/editRace"
+                    android:ems="10"
+                    android:inputType="textPersonName"/>
 
             <TextView
-                android:id="@+id/textLevel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/editlevel"
-                android:layout_alignBottom="@+id/editlevel"
-                android:layout_alignLeft="@+id/textRace"
-                android:layout_alignStart="@+id/textRace"
-                android:text="Level:"
-                android:textSize="18sp" />
+                    android:id="@+id/textLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/editlevel"
+                    android:layout_alignBottom="@+id/editlevel"
+                    android:layout_alignLeft="@+id/textRace"
+                    android:layout_alignStart="@+id/textRace"
+                    android:text="Level:"
+                    android:textSize="18sp"/>
 
             <EditText
-                android:id="@+id/editlevel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/editClass"
-                android:layout_alignStart="@+id/editClass"
-                android:layout_below="@+id/editClass"
-                android:ems="10"
-                android:inputType="number" />
+                    android:id="@+id/editlevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/editClass"
+                    android:layout_alignStart="@+id/editClass"
+                    android:layout_below="@+id/editClass"
+                    android:ems="10"
+                    android:inputType="number"/>
 
             <TextView
-                android:id="@+id/textHealth"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/editHealth"
-                android:layout_alignBottom="@+id/editHealth"
-                android:layout_alignLeft="@+id/textClass"
-                android:layout_alignStart="@+id/textClass"
-                android:text="Health:"
-                android:textSize="18sp" />
+                    android:id="@+id/textHealth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/editHealth"
+                    android:layout_alignBottom="@+id/editHealth"
+                    android:layout_alignLeft="@+id/textClass"
+                    android:layout_alignStart="@+id/textClass"
+                    android:text="Health:"
+                    android:textSize="18sp"/>
 
             <EditText
-                android:id="@+id/editHealth"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/editlevel"
-                android:layout_alignStart="@+id/editlevel"
-                android:layout_below="@+id/editlevel"
-                android:ems="10"
-                android:inputType="number" />
+                    android:id="@+id/editHealth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/editlevel"
+                    android:layout_alignStart="@+id/editlevel"
+                    android:layout_below="@+id/editlevel"
+                    android:ems="10"
+                    android:inputType="number"/>
 
             <TextView
-                android:id="@+id/textInitiative"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/editInitiative"
-                android:layout_alignBottom="@+id/editInitiative"
-                android:layout_alignEnd="@+id/textHealth"
-                android:layout_alignRight="@+id/textHealth"
-                android:text="Initiative:"
-                android:textSize="18sp" />
+                    android:id="@+id/textInitiative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/editInitiative"
+                    android:layout_alignBottom="@+id/editInitiative"
+                    android:layout_alignEnd="@+id/textHealth"
+                    android:layout_alignRight="@+id/textHealth"
+                    android:text="Initiative:"
+                    android:textSize="18sp"/>
 
             <EditText
-                android:id="@+id/editInitiative"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/editHealth"
-                android:layout_alignStart="@+id/editHealth"
-                android:layout_below="@+id/editHealth"
-                android:ems="10"
-                android:inputType="numberSigned" />
+                    android:id="@+id/editInitiative"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/editHealth"
+                    android:layout_alignStart="@+id/editHealth"
+                    android:layout_below="@+id/editHealth"
+                    android:ems="10"
+                    android:inputType="numberSigned"/>
 
             <Button
-                android:id="@+id/buttonSave"
-                style="@style/Widget.AppCompat.Button.Small"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/editInitiative"
-                android:layout_alignRight="@+id/editInitiative"
-                android:layout_below="@+id/editInitiative"
-                android:text="Save"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:id="@+id/buttonSave"
+                    style="@style/Widget.AppCompat.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/editInitiative"
+                    android:layout_alignRight="@+id/editInitiative"
+                    android:layout_below="@+id/editInitiative"
+                    android:text="Save"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
             <Button
-                android:id="@+id/buttonStats"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/buttonSave"
-                android:layout_alignRight="@+id/buttonSave"
-                android:layout_below="@+id/buttonSave"
-                android:layout_toEndOf="@+id/textInitiative"
-                android:layout_toRightOf="@+id/textInitiative"
-                android:onClick="statusPage"
-                android:text="Charatcer Stats" />
+                    android:id="@+id/buttonStats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/buttonSave"
+                    android:layout_alignRight="@+id/buttonSave"
+                    android:layout_below="@+id/buttonSave"
+                    android:layout_toEndOf="@+id/textInitiative"
+                    android:layout_toRightOf="@+id/textInitiative"
+                    android:onClick="statusPage"
+                    android:text="Charatcer Stats"/>
 
             <Button
-                android:id="@+id/buttonSkills"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/buttonStats"
-                android:layout_alignLeft="@+id/buttonStats"
-                android:layout_alignRight="@+id/buttonStats"
-                android:layout_alignStart="@+id/buttonStats"
-                android:layout_below="@+id/buttonStats"
-                android:onClick="skillsPage"
-                android:text="Skill Stats and Rolls" />
+                    android:id="@+id/buttonSkills"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/buttonStats"
+                    android:layout_alignLeft="@+id/buttonStats"
+                    android:layout_alignRight="@+id/buttonStats"
+                    android:layout_alignStart="@+id/buttonStats"
+                    android:layout_below="@+id/buttonStats"
+                    android:onClick="skillsPage"
+                    android:text="Skill Stats and Rolls"/>
 
             <Button
-                android:id="@+id/buttonWep"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/buttonSkills"
-                android:layout_alignLeft="@+id/editInitiative"
-                android:layout_alignRight="@+id/buttonSkills"
-                android:layout_alignStart="@+id/editInitiative"
-                android:layout_below="@+id/buttonSkills"
-                android:onClick="weaponsPage"
-                android:text="Weapons and Spells" />
+                    android:id="@+id/buttonWep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/buttonSkills"
+                    android:layout_alignLeft="@+id/editInitiative"
+                    android:layout_alignRight="@+id/buttonSkills"
+                    android:layout_alignStart="@+id/editInitiative"
+                    android:layout_below="@+id/buttonSkills"
+                    android:onClick="weaponsPage"
+                    android:text="Weapons and Spells"/>
 
         </RelativeLayout>
     </ScrollView>

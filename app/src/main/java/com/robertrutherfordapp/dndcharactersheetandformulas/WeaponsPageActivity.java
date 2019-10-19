@@ -145,9 +145,9 @@ public class WeaponsPageActivity extends AppCompatActivity {
 
                 //for (int diceSet = 0; diceSet < numberdice; diceSet++) {
 
-                    numbOfDice[weaponNumb][j] = new TableRow(this);
+                numbOfDice[weaponNumb][j] = new TableRow(this);
 
-                while(alldice != true) {
+                while (alldice != true) {
                     if ((numberdice - diceBlock) > 5) {
                         for (int spaceCounter = 0; spaceCounter < 5; spaceCounter++) {
 
@@ -228,8 +228,6 @@ public class WeaponsPageActivity extends AppCompatActivity {
                 }
 
 
-
-
                 //}
 
                 weapTableL.addView(numbOfDice[weaponNumb][j], new LinearLayout.LayoutParams(TableLayout.LayoutParams.WRAP_CONTENT,
@@ -261,22 +259,11 @@ public class WeaponsPageActivity extends AppCompatActivity {
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
         //if (weapData.numbOfWeaps != 0) {
-            //addWeaponItem();
+        //addWeaponItem();
 
 
-            //addWeaponItem(v);
+        //addWeaponItem(v);
         //}
 
     }

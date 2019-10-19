@@ -20,67 +20,66 @@ public class StatusActivity extends AppCompatActivity {
     }
 
 
-
-    public void updateView(){
+    public void updateView() {
 
         statsData datastats = MainActivity.dataStats;
 
         EditText strET = (EditText) findViewById(R.id.editStatSTR);
-        strET.setText( "" + datastats.getStr());
+        strET.setText("" + datastats.getStr());
         EditText dexET = (EditText) findViewById(R.id.editStatDEX);
-        dexET.setText( "" + datastats.getDex());
+        dexET.setText("" + datastats.getDex());
         EditText conET = (EditText) findViewById(R.id.editStatCON);
-        conET.setText( "" + datastats.getCon());
+        conET.setText("" + datastats.getCon());
         EditText intET = (EditText) findViewById(R.id.editStatINT);
-        intET.setText( "" + datastats.getIntel());
+        intET.setText("" + datastats.getIntel());
         EditText wisET = (EditText) findViewById(R.id.editStatWIS);
-        wisET.setText( "" + datastats.getWis());
+        wisET.setText("" + datastats.getWis());
         EditText chaET = (EditText) findViewById(R.id.editStatCHA);
-        chaET.setText( "" + datastats.getCha());
+        chaET.setText("" + datastats.getCha());
 
         EditText strBModET = (EditText) findViewById(R.id.editSTRmod);
-        strBModET.setText( "" + datastats.getStrBmod());
+        strBModET.setText("" + datastats.getStrBmod());
         EditText dexBModET = (EditText) findViewById(R.id.editDEXmod);
-        dexBModET.setText( "" + datastats.getDexBmod());
+        dexBModET.setText("" + datastats.getDexBmod());
         EditText conBModET = (EditText) findViewById(R.id.editCONmod);
-        conBModET.setText( "" + datastats.getConBmod());
+        conBModET.setText("" + datastats.getConBmod());
         EditText intBModET = (EditText) findViewById(R.id.editINTmod);
-        intBModET.setText( "" + datastats.getIntelBmod());
+        intBModET.setText("" + datastats.getIntelBmod());
         EditText wisBModET = (EditText) findViewById(R.id.editWISmod);
-        wisBModET.setText( "" + datastats.getWisBmod());
+        wisBModET.setText("" + datastats.getWisBmod());
         EditText chaBModET = (EditText) findViewById(R.id.editCHAmod);
-        chaBModET.setText( "" + datastats.getChaBmod());
+        chaBModET.setText("" + datastats.getChaBmod());
 
         TextView strModET = (TextView) findViewById(R.id.textSTRmod);
-        strModET.setText( "" + datastats.getStrmod());
+        strModET.setText("" + datastats.getStrmod());
         TextView dexModET = (TextView) findViewById(R.id.textDEXmod);
-        dexModET.setText( "" + datastats.getDexmod());
+        dexModET.setText("" + datastats.getDexmod());
         TextView conModET = (TextView) findViewById(R.id.textCONmod);
-        conModET.setText( "" + datastats.getConmod());
+        conModET.setText("" + datastats.getConmod());
         TextView intModET = (TextView) findViewById(R.id.textINTmod);
-        intModET.setText( "" + datastats.getIntelmod());
+        intModET.setText("" + datastats.getIntelmod());
         TextView wisModET = (TextView) findViewById(R.id.textWISmod);
-        wisModET.setText( "" + datastats.getWismod());
+        wisModET.setText("" + datastats.getWismod());
         TextView chaModET = (TextView) findViewById(R.id.textCHAmod);
-        chaModET.setText( "" + datastats.getChamod());
+        chaModET.setText("" + datastats.getChamod());
 
         EditText strSaveET = (EditText) findViewById(R.id.editStatSTRmod);
-        strSaveET.setText( "" + datastats.getStrmod());
+        strSaveET.setText("" + datastats.getStrmod());
         EditText dexSaveET = (EditText) findViewById(R.id.editStatDEXmod);
-        dexSaveET.setText( "" + datastats.getDexmod());
+        dexSaveET.setText("" + datastats.getDexmod());
         EditText conSaveET = (EditText) findViewById(R.id.editStatCONmod);
-        conSaveET.setText( "" + datastats.getConmod());
+        conSaveET.setText("" + datastats.getConmod());
         EditText intSaveET = (EditText) findViewById(R.id.editStatINTmod);
-        intSaveET.setText( "" + datastats.getIntelmod());
+        intSaveET.setText("" + datastats.getIntelmod());
         EditText wisSaveET = (EditText) findViewById(R.id.editStatWISmod);
-        wisSaveET.setText( "" + datastats.getWismod());
+        wisSaveET.setText("" + datastats.getWismod());
         EditText chaSaveET = (EditText) findViewById(R.id.editStatCHAmod);
-        chaSaveET.setText( "" + datastats.getChamod());
+        chaSaveET.setText("" + datastats.getChamod());
 
 
     }
 
-    public void CalcStats(View v){
+    public void CalcStats(View v) {
 
         statsData datastats = MainActivity.dataStats;
 
@@ -158,28 +157,28 @@ public class StatusActivity extends AppCompatActivity {
 
     }
 
-    public void CalcStatSaves(View v){
+    public void CalcStatSaves(View v) {
 
         statsData datastats = MainActivity.dataStats;
 
         //moddifiers
         EditText strModET = (EditText) findViewById(R.id.editStatSTRmod);
-        strModET.setText( "" + datastats.getStrmod());
+        strModET.setText("" + datastats.getStrmod());
         String strmoddi = strModET.getText().toString();
         EditText dexModET = (EditText) findViewById(R.id.editStatDEXmod);
-        dexModET.setText( "" + datastats.getDexmod());
+        dexModET.setText("" + datastats.getDexmod());
         String dexmoddi = dexModET.getText().toString();
         EditText conModET = (EditText) findViewById(R.id.editStatCONmod);
-        conModET.setText( "" + datastats.getConmod());
+        conModET.setText("" + datastats.getConmod());
         String conmoddi = conModET.getText().toString();
         EditText intModET = (EditText) findViewById(R.id.editStatINTmod);
-        intModET.setText( "" + datastats.getIntelmod());
+        intModET.setText("" + datastats.getIntelmod());
         String intmoddi = intModET.getText().toString();
         EditText wisModET = (EditText) findViewById(R.id.editStatWISmod);
-        wisModET.setText( "" + datastats.getWismod());
+        wisModET.setText("" + datastats.getWismod());
         String wismoddi = wisModET.getText().toString();
         EditText chaModET = (EditText) findViewById(R.id.editStatCHAmod);
-        chaModET.setText( "" + datastats.getChamod());
+        chaModET.setText("" + datastats.getChamod());
         String chamoddi = chaModET.getText().toString();
 
         int STRmoddiStat = Integer.parseInt(strmoddi);
@@ -211,13 +210,12 @@ public class StatusActivity extends AppCompatActivity {
         int CHARollStat = Integer.parseInt(charoll);
 
         //calculation
-        int strThrow = datastats.calcThrow(STRmoddiStat,STRRollStat);
-        int dexThrow = datastats.calcThrow(DEXmoddiStat,DEXRollStat);
-        int conThrow = datastats.calcThrow(CONmoddiStat,CONRollStat);
-        int intThrow = datastats.calcThrow(INTmoddiStat,INTRollStat);
-        int wisThrow = datastats.calcThrow(WISmoddiStat,WISRollStat);
-        int chaThrow = datastats.calcThrow(CHAmoddiStat,CHARollStat);
-
+        int strThrow = datastats.calcThrow(STRmoddiStat, STRRollStat);
+        int dexThrow = datastats.calcThrow(DEXmoddiStat, DEXRollStat);
+        int conThrow = datastats.calcThrow(CONmoddiStat, CONRollStat);
+        int intThrow = datastats.calcThrow(INTmoddiStat, INTRollStat);
+        int wisThrow = datastats.calcThrow(WISmoddiStat, WISRollStat);
+        int chaThrow = datastats.calcThrow(CHAmoddiStat, CHARollStat);
 
 
         //output data
@@ -235,30 +233,29 @@ public class StatusActivity extends AppCompatActivity {
         chaThrowTV.setText(String.format("%d", chaThrow));
 
 
-
     }
 
-    public void CalcSavesRoll(View v){
+    public void CalcSavesRoll(View v) {
         statsData datastats = MainActivity.dataStats;
 
         //moddifiers
         EditText strModET = (EditText) findViewById(R.id.editStatSTRmod);
-        strModET.setText( "" + datastats.getStrmod());
+        strModET.setText("" + datastats.getStrmod());
         String strmoddi = strModET.getText().toString();
         EditText dexModET = (EditText) findViewById(R.id.editStatDEXmod);
-        dexModET.setText( "" + datastats.getDexmod());
+        dexModET.setText("" + datastats.getDexmod());
         String dexmoddi = dexModET.getText().toString();
         EditText conModET = (EditText) findViewById(R.id.editStatCONmod);
-        conModET.setText( "" + datastats.getConmod());
+        conModET.setText("" + datastats.getConmod());
         String conmoddi = conModET.getText().toString();
         EditText intModET = (EditText) findViewById(R.id.editStatINTmod);
-        intModET.setText( "" + datastats.getIntelmod());
+        intModET.setText("" + datastats.getIntelmod());
         String intmoddi = intModET.getText().toString();
         EditText wisModET = (EditText) findViewById(R.id.editStatWISmod);
-        wisModET.setText( "" + datastats.getWismod());
+        wisModET.setText("" + datastats.getWismod());
         String wismoddi = wisModET.getText().toString();
         EditText chaModET = (EditText) findViewById(R.id.editStatCHAmod);
-        chaModET.setText( "" + datastats.getChamod());
+        chaModET.setText("" + datastats.getChamod());
         String chamoddi = chaModET.getText().toString();
 
         int STRmoddiStat = Integer.parseInt(strmoddi);
@@ -292,13 +289,12 @@ public class StatusActivity extends AppCompatActivity {
         chaRollET.setText(String.format("%d", CHARollStat));
 
         //calculation
-        int strThrow = datastats.calcThrow(STRmoddiStat,STRRollStat);
-        int dexThrow = datastats.calcThrow(DEXmoddiStat,DEXRollStat);
-        int conThrow = datastats.calcThrow(CONmoddiStat,CONRollStat);
-        int intThrow = datastats.calcThrow(INTmoddiStat,INTRollStat);
-        int wisThrow = datastats.calcThrow(WISmoddiStat,WISRollStat);
-        int chaThrow = datastats.calcThrow(CHAmoddiStat,CHARollStat);
-
+        int strThrow = datastats.calcThrow(STRmoddiStat, STRRollStat);
+        int dexThrow = datastats.calcThrow(DEXmoddiStat, DEXRollStat);
+        int conThrow = datastats.calcThrow(CONmoddiStat, CONRollStat);
+        int intThrow = datastats.calcThrow(INTmoddiStat, INTRollStat);
+        int wisThrow = datastats.calcThrow(WISmoddiStat, WISRollStat);
+        int chaThrow = datastats.calcThrow(CHAmoddiStat, CHARollStat);
 
 
         //output data
@@ -316,7 +312,7 @@ public class StatusActivity extends AppCompatActivity {
         chaThrowTV.setText(String.format("%d", chaThrow));
     }
 
-    public void ModifyStats (View v){
+    public void ModifyStats(View v) {
         Intent myIntent = new Intent(this, StatusActivity.class);
         this.startActivity(myIntent);
     }

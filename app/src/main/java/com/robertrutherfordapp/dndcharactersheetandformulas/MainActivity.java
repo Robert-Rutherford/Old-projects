@@ -41,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
         }); */
     }
 
-    public void onStart(){
+    public void onStart() {
         super.onStart();
         updateView();
     }
 
-    public void updateView(){
+    public void updateView() {
 
 
     }
@@ -73,17 +73,17 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void statusPage (View v){
+    public void statusPage(View v) {
         Intent myIntent = new Intent(this, StatusActivity.class);
         this.startActivity(myIntent);
     }
 
-    public void skillsPage (View v){
+    public void skillsPage(View v) {
         Intent myIntent = new Intent(this, skillsActivity.class);
         this.startActivity(myIntent);
     }
 
-    public void weaponsPage (View v){
+    public void weaponsPage(View v) {
         Intent myIntent = new Intent(this, WeaponsPageActivity.class);
         this.startActivity(myIntent);
     }

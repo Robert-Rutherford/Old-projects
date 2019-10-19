@@ -27,7 +27,6 @@ public class CreateWeaponActivity extends AppCompatActivity {
     ArrayAdapter<CharSequence>[] moreDamageTypeAdapter = new ArrayAdapter[5];
 
 
-
     CreateWeapData weapStats = MainActivity.weapStats;
     weaponDatabase weapData = MainActivity.weaponData;
 
@@ -53,17 +52,17 @@ public class CreateWeaponActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_weapon);
         weaptypeSpin = (Spinner) findViewById(R.id.weapTypeSpinner1);
-        weapTypeadapter = ArrayAdapter.createFromResource(this,R.array.weapon_types,android.R.layout.simple_spinner_item);
+        weapTypeadapter = ArrayAdapter.createFromResource(this, R.array.weapon_types, android.R.layout.simple_spinner_item);
         weapTypeadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         weaptypeSpin.setAdapter(weapTypeadapter);
 
         diceTypeSpin = (Spinner) findViewById(R.id.diceTypespinner1);
-        diceTypeadapter = ArrayAdapter.createFromResource(this,R.array.dice_type,android.R.layout.simple_spinner_item);
+        diceTypeadapter = ArrayAdapter.createFromResource(this, R.array.dice_type, android.R.layout.simple_spinner_item);
         diceTypeadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         diceTypeSpin.setAdapter(diceTypeadapter);
 
         damTypeSpin = (Spinner) findViewById(R.id.damTypespinner1);
-        damTypeadapter = ArrayAdapter.createFromResource(this,R.array.damage_type,android.R.layout.simple_spinner_item);
+        damTypeadapter = ArrayAdapter.createFromResource(this, R.array.damage_type, android.R.layout.simple_spinner_item);
         damTypeadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         damTypeSpin.setAdapter(damTypeadapter);
 
@@ -85,13 +84,13 @@ public class CreateWeaponActivity extends AppCompatActivity {
 
     }
 
-    public void cleanMenu(View v){
+    public void cleanMenu(View v) {
         Boolean addMoreDice = false;
         int numOfDiceAdded = 0;
 
     }
 
-    public void createWeapon(View v){
+    public void createWeapon(View v) {
 
 
         EditText weapNameEdit = (EditText) findViewById(R.id.editWeapName);
@@ -120,33 +119,32 @@ public class CreateWeaponActivity extends AppCompatActivity {
         weapStats.setDamgTypes(0, damageTypeString1);
         typeDamage[0] = damageTypeString1;
 
-        if (addMoreDice == true){
-            for(int i = 1; i <= numOfDiceAdded; i++){
+        if (addMoreDice == true) {
+            for (int i = 1; i <= numOfDiceAdded; i++) {
                 try {
-                String NewNumbDice = numbOfDiceID[i].getText().toString();
-                int numbDice = Integer.parseInt(NewNumbDice);
-                weapStats.setNumOfDice(i, numbDice);
-                numberDice[i] = NewNumbDice;
+                    String NewNumbDice = numbOfDiceID[i].getText().toString();
+                    int numbDice = Integer.parseInt(NewNumbDice);
+                    weapStats.setNumOfDice(i, numbDice);
+                    numberDice[i] = NewNumbDice;
 
-                String NewTypeDice = moreDiceTypeSpin[i].getSelectedItem().toString();
-                weapStats.setTypeDice(i,NewTypeDice);
-                typeDice[i] = NewTypeDice;
+                    String NewTypeDice = moreDiceTypeSpin[i].getSelectedItem().toString();
+                    weapStats.setTypeDice(i, NewTypeDice);
+                    typeDice[i] = NewTypeDice;
 
-                String NewDamagetype = moreDamageTypeSpin[i].getSelectedItem().toString();
-                weapStats.setDamgTypes(i, NewDamagetype);
-                typeDamage[i] = NewDamagetype;
+                    String NewDamagetype = moreDamageTypeSpin[i].getSelectedItem().toString();
+                    weapStats.setDamgTypes(i, NewDamagetype);
+                    typeDamage[i] = NewDamagetype;
 
                 } catch (Exception ex) {
-                         System.out.println(ex.getMessage());
-                         ex.printStackTrace();
-                     }
-
+                    System.out.println(ex.getMessage());
+                    ex.printStackTrace();
                 }
+
+            }
         }
 
 
-
-        weapData.addWeapon(nameWeap,weapTypeString, numberDice, typeDice, typeDamage, numOfDiceAdded+1);
+        weapData.addWeapon(nameWeap, weapTypeString, numberDice, typeDice, typeDamage, numOfDiceAdded + 1);
 
         Intent myIntent = new Intent(this, WeaponsPageActivity.class);
         this.startActivity(myIntent);
@@ -154,9 +152,9 @@ public class CreateWeaponActivity extends AppCompatActivity {
     }
 
 
-    public void addDiceRows( View v) {
+    public void addDiceRows(View v) {
 
-        if(numOfDiceAdded < 4) {
+        if (numOfDiceAdded < 4) {
             numOfDiceAdded++;
 
             TableLayout diceTable = (TableLayout) findViewById(R.id.diceTableLayout);
@@ -181,17 +179,17 @@ public class CreateWeaponActivity extends AppCompatActivity {
             textDiceType.setText("Dice Type: ");
             textDiceType.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.FILL_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
 
-           // try {
-                //Spinner newDiceTypeSpin = new Spinner(this);
-                moreDiceTypeSpin[numOfDiceAdded] = new Spinner(this);
-                //moreDiceTypeSpin[numOfDiceAdded] = (Spinner) findViewById(newDiceTypeSpin[].getId());
-                moreDiceTypeAdapter[numOfDiceAdded] = ArrayAdapter.createFromResource(this, R.array.dice_type, android.R.layout.simple_spinner_item);
-                moreDiceTypeAdapter[numOfDiceAdded].setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-                moreDiceTypeSpin[numOfDiceAdded].setAdapter(moreDiceTypeAdapter[numOfDiceAdded]);
-          //  } catch (Exception ex) {
-           //     System.out.println(ex.getMessage());
-           //     ex.printStackTrace();
-           // }
+            // try {
+            //Spinner newDiceTypeSpin = new Spinner(this);
+            moreDiceTypeSpin[numOfDiceAdded] = new Spinner(this);
+            //moreDiceTypeSpin[numOfDiceAdded] = (Spinner) findViewById(newDiceTypeSpin[].getId());
+            moreDiceTypeAdapter[numOfDiceAdded] = ArrayAdapter.createFromResource(this, R.array.dice_type, android.R.layout.simple_spinner_item);
+            moreDiceTypeAdapter[numOfDiceAdded].setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            moreDiceTypeSpin[numOfDiceAdded].setAdapter(moreDiceTypeAdapter[numOfDiceAdded]);
+            //  } catch (Exception ex) {
+            //     System.out.println(ex.getMessage());
+            //     ex.printStackTrace();
+            // }
 
 
             diceRowsID[numOfDiceAdded].addView(textDiceNum);
@@ -226,23 +224,19 @@ public class CreateWeaponActivity extends AppCompatActivity {
     }
 
 
-
-
-    public void removeDiceRows(View v){
+    public void removeDiceRows(View v) {
 
         TableLayout diceTable = (TableLayout) findViewById(R.id.diceTableLayout);
 
-        if(addMoreDice != false){
-            for(int i=1; i < numOfDiceAdded; i++){
-                diceTable.removeView(diceRowsID[i+5]);
+        if (addMoreDice != false) {
+            for (int i = 1; i < numOfDiceAdded; i++) {
+                diceTable.removeView(diceRowsID[i + 5]);
                 diceTable.removeView(diceRowsID[i]);
             }
         }
 
 
     }
-
-
 
 
 }

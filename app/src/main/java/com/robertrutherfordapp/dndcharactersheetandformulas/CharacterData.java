@@ -7,12 +7,4 @@ package com.robertrutherfordapp.dndcharactersheetandformulas;
 public class CharacterData {
 
 
-
-
-
-
-
-
-
-
 }

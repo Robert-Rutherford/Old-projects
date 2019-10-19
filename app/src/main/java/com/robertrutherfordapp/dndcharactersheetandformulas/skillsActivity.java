@@ -15,7 +15,7 @@ public class skillsActivity extends AppCompatActivity {
         updateView();
     }
 
-    public void updateView(){
+    public void updateView() {
 
         statsData datastats = MainActivity.dataStats;
         //output the modifiers form the skill page
@@ -57,10 +57,9 @@ public class skillsActivity extends AppCompatActivity {
         survMod.setText("" + datastats.getWismod());
 
 
-
     }
 
-    public void calcThrow(View v){
+    public void calcThrow(View v) {
 
         statsData datastats = MainActivity.dataStats;
         // get modifier
@@ -197,7 +196,7 @@ public class skillsActivity extends AppCompatActivity {
         int survRoll = Integer.parseInt(survRollString);
 
         //calculate
-        int acroThrow = datastats.calcThrow(acroStat,acroRoll);
+        int acroThrow = datastats.calcThrow(acroStat, acroRoll);
         int animHandThrow = datastats.calcThrow(animHandStat, animHandRoll);
         int arcanaThrow = datastats.calcThrow(arcanaStat, arcanaRoll);
         int athlThrow = datastats.calcThrow(athlStat, athlRoll);
@@ -257,7 +256,7 @@ public class skillsActivity extends AppCompatActivity {
     }
 
 
-    public void rollThrow(View v){
+    public void rollThrow(View v) {
 
         statsData datastats = MainActivity.dataStats;
         // get modifier
@@ -393,7 +392,7 @@ public class skillsActivity extends AppCompatActivity {
         rollSurvET.setText(String.format("%d", survRoll));
 
         //calculate
-        int acroThrow = datastats.calcThrow(acroStat,acroRoll);
+        int acroThrow = datastats.calcThrow(acroStat, acroRoll);
         int animHandThrow = datastats.calcThrow(animHandStat, animHandRoll);
         int arcanaThrow = datastats.calcThrow(arcanaStat, arcanaRoll);
         int athlThrow = datastats.calcThrow(athlStat, athlRoll);
